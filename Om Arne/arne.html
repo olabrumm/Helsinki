@@ -27,24 +27,44 @@
     h1{
     color: #F4F3F1;   
     font-size: 30px; 
+    font-family: sans-serif;
     position: relative;
     margin-left: 40%;
     }
     h2{
         color:#6D6E71;
         font-size: 30px;
+        font-family: sans-serif;
     }
     img{
 
         border-radius: 30%;
         border-color: #81A979;
+        width:350px;
+        height:450px;
         
     }
+    
+    #arne{
+        border-radius: 30%;
+        position: static;
+        bottom: -80%;
+        width:250px;
+        height:300px;
+        float: right;
+        margin-left: 15px;
+        
+        
+        border-color: #81A979;
+    }
     p{
-        font-size: 25px;
+        font-size: 24px;
+        font-family: sans-serif;
         line-height: 1.9;
+        text-align: left;
+        margin:10px;
         color: #F4F3F1;
-        position: absolute;
+        
      
     }
     .sitater{
@@ -53,11 +73,13 @@
         top: 30%;
         left: 35%;
         font-size: 45px;
+        font-family: sans-serif;
     }
     a{
       
       text-decoration:none;
       font-size: 20px;
+      font-family: sans-serif;
       color: #F4F3F1;
       background-color: #96608E;
       position: absolute;
@@ -66,7 +88,7 @@
       border-radius: 50px;
      
       left: 20px;
-      bottom: -80%;
+      bottom: -95%;
 
     }
     a:hover{
@@ -76,7 +98,7 @@
     }
     .secondlink{
       font-size: 20px;
-    
+      font-family: sans-serif;
       color: #F4F3F1;
       background-color: #96608E;
       position: absolute;
@@ -84,10 +106,28 @@
       border-color: #96608E;
       border-radius: 50px;
       left: 90%;
-      bottom: -90%;
+      bottom: -105%;
          
     }
     .secondlink:hover{
+        border-color: #81A979;
+        background-color: #81A979;
+        box-shadow: inset 200px , 0 , 0 , 0 white;
+    }
+
+    #previous{
+      font-size: 20px;
+      font-family: sans-serif;
+      color: #F4F3F1;
+      background-color: #96608E;
+      position: absolute;
+      border-style: solid;
+      border-color: #96608E;
+      border-radius: 50px;
+      right: 90%;
+      bottom: -105%;
+    }
+    #previous:hover{
         border-color: #81A979;
         background-color: #81A979;
         box-shadow: inset 200px , 0 , 0 , 0 white;
@@ -96,34 +136,35 @@
  </style>
 <body>
 
-    
     <h1>Arne Næss</h1>
 
+    <!--Lenker til hjem siden med klassenavnet: home og minside med klassenavnet: profile-->
     <a class="home" href="link til hjem side">Hjem</a>
     <a class="profile" href="link til min side">Min Side</a>
 
     <h2>Hvem var Arne Næss?</h2> 
-    <img src="https://harvestmag.imgix.net/images/Naess_jorn-H-moen.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fm=jpg&fp-x=0.5&fp-y=0.5&h=1000&q=80&sharp=10&w=750&s=5b9ed2205f849aa02b3295f53340fe49" , style="width:350px;height:450px;">
+    <img src="https://harvestmag.imgix.net/images/Naess_jorn-H-moen.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fm=jpg&fp-x=0.5&fp-y=0.5&h=1000&q=80&sharp=10&w=750&s=5b9ed2205f849aa02b3295f53340fe49">
     
-    <p>
+    <!--Dette Avsnittet om Arne Næss  p atributtet  og et bilde er lagt inn ved siden av den med id="arne"-->
+    <p> <img id="arne" src="https://naturvernforbundet.no/content/uploads/2021/04/MEDIA_FILE_ID_166921__Arne-Naess-foto-ukjent-middels.jpg-articledisplay.jpg" alt="arne næss">
         Arne Næss var en norsk filosof og fjellklatrer som levde fra 1912 til 2009. Han er mest kjent for sitt arbeid innenfor miljøfilosofi og utviklingen av det han kalte "dypøkologi".
         "Dyp Økologi" handler om å gjenopprette forbindelsen mellom mennesker og naturen. Han argumenterte for at alle former for liv har en egenverdi og at vi bør verdsette mangfoldet og interaksjonen i økosystemene. 
        Dette perspektivet står i kontrast til en mer antroposentrisk tilnærming, hvor mennesket betraktes som det sentrale eller viktigste elementet i naturen.
        Næss mente også at mennesker må utvikle en dypere forståelse og respekt for naturen, og at dette kan oppnås gjennom personlig erfaring og direkte kontakt med naturlige omgivelser. Han oppfordret til friluftsliv og fjellklatring som en måte å oppnå denne forbindelsen med naturen.     
-        Næss var opptatt av forholdet mellom mennesker og naturen og argumenterte for at mennesker ikke bør betrakte seg som separate fra, men heller som en del av naturen
-       Næss' tanker og ideer har hatt en stor innflytelse på miljøbevegelsen og har bidratt til å øke bevisstheten om viktigheten av å ta vare på naturen for fremtidige generasjoner.       
-    </p>
-
-    <p class="sitater">
-
-        "Han var en mann som ønsket at unge  skulle forstå samspillet mellom natur, 
-        tanker og følelser”
-    </p>
-    <p class="sitater">
+       Næss sine tanker og ideer har hatt en stor innflytelse på miljøbevegelsen og har bidratt til å øke bevisstheten om viktigheten av å ta vare på naturen for fremtidige generasjoner.       
       
     </p>
 
+    <!--Legger inn sitatet som en paragraf og legger den inn i klassen med navnet :sitater-->
+    <p class="sitater">
+
+        ”Han var en mann som ønsket at unge  skulle forstå samspillet mellom natur, 
+        tanker og følelser”-Anonym
+    </p>
+     
+    <!-- Lo inn to knapper der den ene lenker til ANCEP med og den andre lenker til nest side-->
     <a href="https://ancep.no/om-arne-nass/">Klikk her for å lese mer om Arne Næss</a>
     <a class="secondlink" href="link til html side">Gå videre </a>
+    <a id="previous" href="link tilbake">Gå tilbake</a>
 </body>
 </html>
