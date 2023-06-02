@@ -75,6 +75,17 @@ body::before {
     font-family: sans-serif;
     }
 
+#titel_2 {
+    position: absolute;
+    bottom: 5%;
+    left: 38%;
+    display: inline-block;
+    color:#C7B9A5;
+    padding: 1vw;
+    font-size: 2vw; 
+    font-family: sans-serif;
+    }    
+
 .boxs{
     position: absolute;
     border: 2px solid #7D48B1;
@@ -89,7 +100,7 @@ body::before {
 
 #bilde-arne{
     height: 20vw;
-    width: 23vw;
+    width: 27vw;
 }
 
 #text-box{
@@ -101,13 +112,21 @@ body::before {
 }
 
 .text{
-    padding: 1vw;
-    font-size: 1vw;
+    padding: 0.5vw;
+    font-size: 1.1vw;
     font-family: sans-serif;
 }
 
 #reward-box{
     bottom: 5%;
-    height: 5vw;
-    width: 15vw;
+    right: 40%;
+    height: 8vw;
+    width: 8vw;
+    border: none;
+    box-shadow: none;
+}
+
+#reward-pic{
+    height: 8vw;
+    width: 8vw;
 }
