@@ -58,6 +58,12 @@ body::before {
   padding: 0%;
 }
 
+#video {
+  height: 40vh;
+  width: 40vw;
+  border: 0px;
+}
+
 .button {
   position: absolute;
   bottom: 20px;
