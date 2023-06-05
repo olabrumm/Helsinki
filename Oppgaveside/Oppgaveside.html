@@ -19,7 +19,7 @@
     <div id="startAssignment">
         <label>
             <p>Vis oppgaver</p>
-            <input type="checkbox" id="startCheck">
+            <input class="checkBox" type="checkbox" id="startCheck">
         </label>
     </div>
 
@@ -27,7 +27,7 @@
         <img src="relax.jpg" alt="slapp av" id="imageOne">
         <p>Finn deg et behagelig sted og sett deg godt til rette.</p>
         <label>
-            <input type="checkbox" id="firstCheckBox"> Gjennomført
+            <input class="checkBox" type="checkbox" id="firstCheckBox"> Gjennomført
         </label>
     </div>
 
@@ -35,7 +35,7 @@
         <img src="listening.jpeg" alt="hør etter" id="imageTwo">
         <p>Se på omgivelsene rundt deg og lytt til lydene.</p>
         <label>
-            <input type="checkbox" id="secondCheckBox"> Gjennomført
+            <input class="checkBox" type="checkbox" id="secondCheckBox"> Gjennomført
         </label>
     </div>
 
@@ -43,6 +43,11 @@
         <iframe id="video" type="text/html" title="arnerop" src="https://www.youtube.com/embed/kK1tzfoRmUk?controls=1"> 
         </iframe>
         <p>Ut i fra problemstillingen over, hvordan ville du løst dette?</p>
+        <div id="userInput">
+            <input type="text" id="oppgaveEn">
+            <button onclick="getText()">Avgi ditt svar</button>
+            <p id="svarOppgaveEn"></p>
+        </div>
     </div>
 
     
@@ -82,9 +87,17 @@
             }
         });
 
+        function getText() {
+                var oppgaveEn = document.getElementById("oppgaveEn").value;
+                var outputParagraph = document.getElementById("svarOppgaveEn");
+                outputParagraph.textContent = oppgaveEn;
+            }
+
     </script>
 
-    <a href="destination-page.html" class="button">Hva har du lært?</a>
+    <img src="logo.png" id="logo" alt="ANCEP sin logo">
+
+    <a href="../Resultat/refleksjon_resultat.html" class="button">Hva har du lært?</a>
     <a href="home.html" class="home">HJEM</a>
     <a href="min_side.html" class="min_side">MIN SIDE</a>
     
