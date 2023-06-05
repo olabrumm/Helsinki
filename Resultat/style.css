@@ -1,0 +1,132 @@
+body {
+    position: relative;
+    height: 100vh;
+    margin: 0;
+    background-color: #F4F3F1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #F4F3F1 0%, #F4F3F1 12%, #F4F3F1 12%);
+    margin: 0;
+    padding: 0;
+    }
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    height: 4%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    }
+
+#home{
+    position: absolute;
+    top: 20px;
+    right: 1%;
+    display: inline-block;
+    padding: 0.5% 1%;
+    background-color: #96608E;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    font-size: 1vw;
+    font-family: sans-serif;
+    }
+
+#min_side{
+    position: absolute;
+    top: 20px;
+    right: 6%;
+    display: inline-block;
+    padding: 0.5% 1%;
+    background-color: #96608E;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    font-size: 1vw;
+    font-family: sans-serif;
+    }
+
+.button:hover {
+    background-color: #333;
+    color: #fff;
+    }
+
+#logo{
+    position: absolute;
+    height: 8%;
+    width: 15%;
+    left: 5%;
+    top: 2%; 
+    }
+
+#titel {
+    position: absolute;
+    top: 12%;
+    display: inline-block;
+    color:#C7B9A5;
+    padding: 1vw;
+    font-size: 2vw; 
+    font-family: sans-serif;
+    }
+
+#titel_2 {
+    position: absolute;
+    bottom: 5%;
+    left: 38%;
+    display: inline-block;
+    color:#C7B9A5;
+    padding: 1vw;
+    font-size: 2vw; 
+    font-family: sans-serif;
+    }    
+
+.boxs{
+    position: absolute;
+    border: 2px solid #7D48B1;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2); 
+    }
+
+#pic-box{
+    height: 20vw;
+    width: 27vw;
+    left: 18%;
+}
+
+#bilde-arne{
+    height: 20vw;
+    width: 27vw;
+}
+
+#text-box{
+    height: 20vw;
+    width: 27vw;
+    right: 18%;
+    background-color: #C7B9A5;
+
+}
+
+.text{
+    padding: 0.5vw;
+    font-size: 1.1vw;
+    font-family: sans-serif;
+}
+
+#reward-box{
+    bottom: 5%;
+    right: 40%;
+    height: 8vw;
+    width: 8vw;
+    border: none;
+    box-shadow: none;
+}
+
+#reward-pic{
+    height: 8vw;
+    width: 8vw;
+}
