@@ -13,10 +13,22 @@
         background-color: #F4F3F1;
     }
 
-    .home{
+    #logo{
+        position: absolute;
+        height: 8%;
+        width: 15%;
+        border-radius: 10%;
+        left: 5%;
+        top: 2%; 
+    }
+    #home{
         position: relative;
         font-size: 20px;
-        left: 85%;
+        left: 86%;
+    }
+    #home:hover{
+        background-color: #333;
+        color: #fff;
     }
     .profile{
         position: relative;
@@ -26,7 +38,7 @@
 
     h1{
     color:  #231F20;   
-    font-size: 33px; 
+    font-size: 36px; 
     font-family: sans-serif;
     position: relative;
     margin-left: 40%;
@@ -92,44 +104,8 @@
 
     }
     a:hover{
-        border-color: #81A979;
-        background-color: #81A979;
-        box-shadow: inset 200px , 0 , 0 , 0 white;
-    }
-    .secondlink{
-      font-size: 20px;
-      font-family: sans-serif;
-      color: #F4F3F1;
-      background-color: #96608E;
-      position: absolute;
-      border-style: solid;
-      border-color: #96608E;
-      border-radius: 50px;
-      left: 90%;
-      bottom: -95%;
-         
-    }
-    .secondlink:hover{
-        border-color: #81A979;
-        background-color: #81A979;
-        box-shadow: inset 200px , 0 , 0 , 0 white;
-    }
-
-    #previous{
-      font-size: 20px;
-      font-family: sans-serif;
-      color: #F4F3F1;
-      background-color: #96608E;
-      position: absolute;
-      border-style: solid;
-      border-color: #96608E;
-      border-radius: 50px;
-      right: 90%;
-      bottom: -95%;
-    }
-    #previous:hover{
-        border-color: #81A979;
-        background-color: #81A979;
+        background-color: #333;
+        color: #fff;
         box-shadow: inset 200px , 0 , 0 , 0 white;
     }
     
@@ -139,7 +115,7 @@
     <h1>Arne Næss</h1>
 
     <!--Lenker til hjem siden med klassenavnet: home og minside med klassenavnet: profile-->
-    <a class="home" href="link til hjem side">Hjem</a>
+    <a id="home" href="link til hjem side">Hovedmeny</a>
     <a class="profile" href="link til min side">Min Side</a>
 
     <h2>Hvem var Arne Næss?</h2> 
@@ -163,7 +139,8 @@
      
     <!-- Lo inn to knapper der den ene lenker til ANCEP med og den andre lenker til nest side-->
     <a href="https://ancep.no/om-arne-nass/">Klikk her for å lese mer om Arne Næss</a>
-    <a class="secondlink" href="link til html side">Gå videre </a>
-    <a id="previous" href="link tilbake">Gå tilbake</a>
+    <img src="logo.png" id="logo" alt="ANCEP logo">
+
+
 </body>
 </html>
