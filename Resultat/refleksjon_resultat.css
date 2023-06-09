@@ -77,8 +77,8 @@ body::before {
 
 #titel_2 {
     position: absolute;
-    bottom: 5%;
-    left: 38%;
+    bottom: 6%;
+    right:15%;
     display: inline-block;
     color:#C7B9A5;
     padding: 1vw;
@@ -118,8 +118,8 @@ body::before {
 }
 
 #reward-box{
-    bottom: 5%;
-    right: 40%;
+    bottom: 16%;
+    right: 13%;
     height: 8vw;
     width: 8vw;
     border: none;
@@ -127,6 +127,6 @@ body::before {
 }
 
 #reward-pic{
-    height: 8vw;
-    width: 8vw;
+    height: 15vw;
+    width: 20vw;
 }
