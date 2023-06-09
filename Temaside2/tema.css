@@ -5,11 +5,11 @@ height: 222px;
 left: 435px;
 top: -65px; 
 
-font-family: sans-serif;
+font-family: Papyrus, family;
 font-style: normal;
-font-weight: 400;
-font-size: 96px;
-line-height: 96px;
+font-weight: 600;
+font-size: 85px;
+line-height: 135px;
 text-align: center;}
     p {text-align: center;}
     div {text-align: center;}
@@ -109,12 +109,22 @@ top: 436px;
 
 .SRdiv{
     position: absolute;
-    top:220px;
+    top:170px;
     left: 140px;
     color: black;
     visibility: hidden; 
     opacity: 0;
     transition: opacity .2s, visibility .2s;
+    font-family: Papyrus, family;
+}
+
+.SRinfo {
+    position: absolute;
+    top:110px;
+    left:50px;
+    color: black;
+    font-size:30px;
+    font-family: Papyrus, family;
 }
 
 .SRpic:hover .SRdiv{
@@ -125,6 +135,7 @@ top: 436px;
 }
 .SRpic:hover .SR{
     filter: blur(2.5px);
+    opacity: 0.60;
     
     
 }
@@ -134,13 +145,23 @@ top: 436px;
 
 .SFdiv{
     position: absolute;
-    top:200px;
+    top:170px;
     left: 590px;
     color: black;
     visibility: hidden; 
     opacity: 0;
     transition: opacity .2s, visibility .2s;
+    font-family: Papyrus, family;
 
+}
+
+.SFinfo {
+    position: absolute;
+    top:110px;
+    left:30px;
+    color: black;
+    font-size:30px;
+    font-family: Papyrus, family;
 }
 .SFpic:hover .SFdiv{
     visibility: visible;
@@ -149,6 +170,7 @@ top: 436px;
 
 .SFpic:hover .SF{
         filter: blur(2.5px);
+        opacity: 0.60;
         
         
 }
@@ -159,13 +181,23 @@ top: 436px;
 
 .LKdiv{
     position: absolute;
-    top:225px;
+    top:170px;
     left: 1025px;
     color: black;
     visibility: hidden; 
     opacity: 0;
     transition: opacity .2s, visibility .2s;
+    font-family: Papyrus, family;
 
+}
+
+.LKinfo {
+    position: absolute;
+    top:110px;
+    left:30px;
+    color: black;
+    font-size:30px;
+    font-family: Papyrus, family;
 }
 .LKpic:hover .LKdiv{
     visibility: visible;
@@ -174,6 +206,7 @@ top: 436px;
 
 .LKpic:hover .LK{
         filter: blur(2.5px);
+        opacity: 0.60;
         
         
 }
@@ -185,14 +218,25 @@ top: 436px;
 
 .MFdiv{
     position: absolute;
-    top:460px;
+    top:410px;
     left:160px;
     color: black;
     visibility: hidden; 
     opacity: 0;
     transition: opacity .2s, visibility .2s;
+    font-family: Papyrus, family;
 
 }
+
+.MFinfo{
+    position: absolute;
+    top:120px;
+    left:15px;
+    color: black;
+    font-size:30px;
+    font-family: Papyrus, family;
+}
+
 .MFpic:hover .MFdiv{
     visibility: visible;
     opacity: 1;
@@ -200,6 +244,7 @@ top: 436px;
 
 .MFpic:hover .MF{
         filter: blur(2.5px);
+        opacity: 0.60;
         
         
 }
@@ -211,14 +256,25 @@ top: 436px;
 
 .SUdiv{
     position: absolute;
-    top:460px;
+    top:410px;
     left:575px;
     color: black;
     visibility: hidden; 
     opacity: 0;
     transition: opacity .2s, visibility .2s;
+    font-family: Papyrus, family;
 
 }
+
+.SUinfo{
+    position: absolute;
+    top:120px;
+    left:15px;
+    color: black;
+    font-size:30px;
+    font-family: Papyrus, family;
+}
+
 .SUpic:hover .SUdiv{
     visibility: visible;
     opacity: 1;
@@ -226,6 +282,7 @@ top: 436px;
 
 .SUpic:hover .SU{
         filter: blur(2.5px);
+        opacity: 0.60;
         
         
 }
@@ -237,14 +294,25 @@ top: 436px;
 
 .DOdiv{
     position: absolute;
-    top:460px;
+    top:410px;
     left:1025px;
     color: black;
     visibility: hidden; 
     opacity: 0;
     transition: opacity .2s, visibility .2s;
+    font-family: Papyrus, family;
 
 }
+
+.DOinfo{
+    position: absolute;
+    top:120px;
+    left:15px;
+    color: black;
+    font-size:30px;
+    font-family: Papyrus, family;
+}
+
 .DOpic:hover .DOdiv{
     visibility: visible;
     opacity: 1;
@@ -252,6 +320,7 @@ top: 436px;
 
 .DOpic:hover .DO{
         filter: blur(2.5px);
+        opacity: 0.60;
         
         
 }
