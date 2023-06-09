@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="OppIndRef.css">
+    <title>Sosial Rettferdighet - Oppgave Tre</title>
+</head>
+<body>
+
+    <div class="toolBar">
+
+        <div class="logo"></div>
+        <div class="home"><a href="home.html" class="link">HJEM</a></div>
+        <div class="myPage"><a href="min_side.html" class="link">MIN SIDE</a></div>
+
+    </div>
+
+    <div class="title">
+
+        <h1>Sosial Rettferdighet - Oppgave Tre</h1>
+
+        <label>
+            <p class="checkBox">Vis oppgaver</p>
+            <input class="checkBox" type="checkbox" id="startCheck">
+        </label>
+
+    </div>
+
+    <div class="mainPage">
+
+        <div class="question" id="questionOne">
+            <div id="imageOne"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+            <p>Finn deg et behagelig sted og sett deg godt til rette.</p>
+            <label>
+                <input class="checkBox" type="checkbox" id="firstCheckBox"> Gjennomført
+            </label>
+        </div>
+    
+        <div class="question" id="questionTwo">
+            <div id="imageTwo"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+            <p>Se på omgivelsene rundt deg og lytt til lydene.</p>
+            <label>
+                <input class="checkBox" type="checkbox" id="secondCheckBox"> Gjennomført
+            </label>
+        </div>
+    
+        <div class="question" id="questionThree">
+            <iframe id="video" type="text/html" title="arnerop" src="https://www.youtube.com/embed/kK1tzfoRmUk"> 
+            </iframe>
+            <p>Ut i fra problemstillingen over, hvordan ville du løst dette?</p>
+            <div id="userInput">
+                <input type="text" id="oppgaveEn">
+                <button onclick="getText()">Avgi ditt svar</button>
+                <p id="svarOppgaveEn"></p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="bottomBar">
+        <div class="nextPage">
+            <a href="../Resultat/refleksjon_resultat.html" class="link">Hva har du lært?</a>
+        </div>
+        <div class="navigation">
+            <a href="OppgaveToSosRett.html" class="prevAssignment">&#8249;</a>
+        </div>
+    </div>
+
+    <script>
+        var checkboxstart = document.getElementById("startCheck");
+        var questionOne = document.getElementById("questionOne");
+
+        checkboxstart.addEventListener('change', function() {
+            if (this.checked) {
+                questionOne.classList.add("show");
+                checkboxstart.classList.add("show");
+            } else {
+                questionOne.classList.remove("show");
+            }
+        });
+
+        var firstCheckBox = document.getElementById("firstCheckBox");
+        var questionTwo = document.getElementById("questionTwo");
+
+        firstCheckBox.addEventListener('change', function() {
+            if (this.checked) {
+                questionOne.classList.remove("show");
+                questionTwo.classList.add("show");
+            } else {
+                questionTwo.classList.remove("show");
+            }
+        });
+
+        var secondCheckBox = document.getElementById("secondCheckBox");
+        var questionThree = document.getElementById("questionThree");
+
+        secondCheckBox.addEventListener('change', function() {
+            if (this.checked) {
+                questionThree.classList.add("show");
+                questionTwo.classList.remove("show");
+            } else {
+                questionThree.classList.remove("show");
+            }
+        });
+
+        function getText() {
+                var oppgaveEn = document.getElementById("oppgaveEn").value;
+                var outputParagraph = document.getElementById("svarOppgaveEn");
+                outputParagraph.textContent = oppgaveEn;
+            }
+
+    </script>
+
+</body>
+</html>
