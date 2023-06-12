@@ -45,6 +45,17 @@ text-align: center;}
 .HB:hover{
     opacity:1;
 }
+.AB{
+    height: 50px;
+    position: absolute;
+    left:1517px;
+    opacity: 0.5;
+    top:33px
+}
+
+.AB:hover{
+    opacity:1;
+}
 
 .SR{
     position: absolute;
