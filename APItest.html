@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>hello</p>
+
+<ul id="itemList"></ul>
+    <script>
+      // Make an HTTP GET request to retrieve items
+    fetch('https://localhost:7147/api/Users')
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+        var userList = document.getElementById('itemList');
+        data.forEach(user => {
+            const listItem = document.createElement('li');
+            listItem.textContent = user.username;
+            userList.appendChild(listItem)
+        })
+    })
+    fetch('https://localhost:7147/api/Tasks')
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+    })
+
+    const url = 'https://localhost:7147/api/Users'; // Replace with your API endpoint URL
+
+const data = {
+  username: 'John Doe',
+  email: 'johndoe@example.com',
+  password: 'hogeyboogey'
+};
+
+const requestOptions = {
+  method: 'POST', // HTTP method (e.g., POST, PUT, PATCH)
+  headers: {
+    'Content-Type': 'application/json' // Set the content type to JSON
+  },
+  body: JSON.stringify(data) // Convert the data to JSON string
+};
+
+fetch(url, requestOptions)
+  .then(response => response.json())
+  .then(result => {
+    console.log('Data successfully written:', result);
+    // Perform any further actions after successful write
+  })
+  .catch(error => {
+    console.error('Error writing data:', error);
+    // Handle any errors that occurred during write
+  });
+
+
+    </script>
+</body>
+</html>
