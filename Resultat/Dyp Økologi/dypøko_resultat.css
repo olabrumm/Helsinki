@@ -9,6 +9,7 @@ body {
     background: linear-gradient(to bottom, #F4F3F1 0%, #F4F3F1 12%, #F4F3F1 12%);
     margin: 0;
     padding: 0;
+    color: #505054;
     }
 
 body::before {
@@ -69,7 +70,7 @@ body::before {
     position: absolute;
     top: 12%;
     display: inline-block;
-    color:#C7B9A5;
+    color:#505054;
     padding: 1vw;
     font-size: 2vw; 
     font-family: sans-serif;
@@ -80,7 +81,7 @@ body::before {
     bottom: 6%;
     right:15%;
     display: inline-block;
-    color:#C7B9A5;
+    color:#505054;
     padding: 1vw;
     font-size: 2vw; 
     font-family: sans-serif;
