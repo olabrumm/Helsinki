@@ -1,6 +1,7 @@
 body {
   margin: 0;
   background-color: #F4F3F1;
+  font-family: sans-serif;
 }
 
 a {
@@ -81,6 +82,10 @@ a:hover {
   border-radius: 30px;
 }
 
+.title {
+  text-align: center;
+}
+
 .mainPage {
   display: grid; 
   grid-template-rows: repeat(3, 134px);
@@ -95,7 +100,6 @@ a:hover {
 
 .question {
   display: none;
-  border: solid;
   align-items: center;
   text-align: center;
 }

@@ -1,6 +1,7 @@
 body {
   margin: 0;
   background-color: #F4F3F1;
+  font-family: sans-serif;
 }
 
 a {
@@ -21,6 +22,11 @@ a:hover {
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   justify-content: right;
   align-content: right;
+  text-align: center;
+}
+
+.title {
+  text-align: center;
 }
 
 .logo {
@@ -81,12 +87,17 @@ a:hover {
   border-radius: 30px;
 }
 
+.title {
+  text-align: center;
+}
+
 .mainPage {
   display: grid; 
   grid-template-rows: repeat(3, 134px);
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   justify-content: center;
   align-content: center;
+  text-align: center;
 } 
 
 .checkBox.show {
@@ -95,7 +106,6 @@ a:hover {
 
 .question {
   display: none;
-  border: solid;
   align-items: center;
   text-align: center;
 }
