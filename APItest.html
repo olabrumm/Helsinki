@@ -11,22 +11,66 @@
 
 <ul id="itemList"></ul>
     <script>
-
-
       // Make an HTTP GET request to retrieve items
-fetch('https://localhost:7147/api/Users')
+    fetch('https://localhost:7147/api/Users')
     .then(response => response.json())
     .then(data => {
         console.log(data);
         var userList = document.getElementById('itemList');
         data.forEach(user => {
             const listItem = document.createElement('li');
-            listItem.textContent = user.username;
+            listItem.textContent = user.profileImage;
             userList.appendChild(listItem)
         })
     })
+    const url = 'https://localhost:7147/api/Users'; 
+    const userId = 6;
+    const updatedProfileImage = 9;
+    const userUrl = `${url}/${userId}`;
 
 
+
+
+
+
+
+    // KODE FOR Å ENDRE PROFILBILDE TIL BRUKER
+fetch(userUrl)
+  .then(response => response.json())
+  .then(user => {
+    console.log('User data:', user);
+
+    // Modify the ID of the user
+    const updatedProfileImage = 456;
+
+    // Update the ID property of the user object
+    user.profileImage = updatedProfileImage;
+
+    // Create the request options
+    const requestOptions = {
+      method: 'PUT', // Use the PUT method to update the user
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(user) // Convert the updated user object to JSON string
+    };
+
+    // Send the request to update the user's ID
+    fetch(userUrl, requestOptions)
+      .then(response => response.json())
+      .then(updatedUser => {
+        console.log('User ID updated successfully:', updatedUser);
+        // Perform any further actions after successful update
+      })
+      .catch(error => {
+        console.error('Error updating user ID:', error);
+        // Handle any errors that occurred during the update
+      });
+  })
+  .catch(error => {
+    console.error('Error fetching user data:', error);
+    // Handle any errors that occurred during the initial fetch
+  });
     </script>
 </body>
 </html>
