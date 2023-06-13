@@ -5,7 +5,8 @@ height: 222px;
 left: 435px;
 top: -65px; 
 
-font-family: Papyrus, family;
+font-family: sans-serif;
+color: #505054;
 font-style: normal;
 font-weight: 600;
 font-size: 85px;
@@ -42,6 +43,17 @@ text-align: center;}
 }
 
 .HB:hover{
+    opacity:1;
+}
+.AB{
+    height: 50px;
+    position: absolute;
+    left:1517px;
+    opacity: 0.5;
+    top:33px
+}
+
+.AB:hover{
     opacity:1;
 }
 
@@ -115,7 +127,7 @@ top: 436px;
     visibility: hidden; 
     opacity: 0;
     transition: opacity .2s, visibility .2s;
-    font-family: Papyrus, family;
+    font-family: sans-serif;
 }
 
 .SRinfo {

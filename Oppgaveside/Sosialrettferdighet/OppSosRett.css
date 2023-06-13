@@ -2,6 +2,7 @@ body {
   margin: 0;
   background-color: #F4F3F1;
   font-family: sans-serif;
+  color: #505054;
 }
 
 a {
@@ -138,6 +139,15 @@ a:hover {
   width: 100%;
   border: 0px;
   object-fit: cover;
+}
+
+#oppgaveEn {
+  box-sizing: border-box;
+  width: 100%;
+  resize: none;
+  float: left;
+  line-break: auto;
+  word-break: break-all;
 }
 
 .bottomBar {

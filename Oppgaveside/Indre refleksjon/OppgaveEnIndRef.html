@@ -46,16 +46,25 @@
         </div>
     
         <div class="question" id="questionThree">
-            <iframe id="video" type="text/html" title="arnerop" src="https://www.youtube.com/embed/kK1tzfoRmUk"> 
-            </iframe>
-            <p>Ut i fra problemstillingen over, hvordan ville du løst dette?</p>
-            <div id="userInput">
-                <input type="text" id="oppgaveEn">
-                <button onclick="getText()">Avgi ditt svar</button>
-                <p id="svarOppgaveEn"></p>
+           
+            <p id="task">Ut i fra videoen du så på forrige side, besvar disse 3 spørsmålene.</p>
+            <div id="userInput" class="userInput">
+                <p>Hva er indre refleksjon?</p>
+                <input type="text" id="oppg1">
+                <button onclick="clearTxt()">Svar</button>
+            </div>
+            <div id="userInput" class="userInput">
+                <p>Nevn en teknikk fra videoen du så</p>
+                <input type="text" id="oppg2">
+                <button onclick="clearTxt2()">Svar</button>
+            </div>
+            <div id="userInput" class="userInput">
+                <p>Hvordan tror du at indre refleksjon kan ha en positiv effekt på ditt eget liv?</p>
+                <input type="text" id="oppg3">
+                <button onclick="clearTxt3()">Svar</button>
             </div>
         </div>
-
+ 
     </div>
 
     <div class="bottomBar">
@@ -102,11 +111,19 @@
             }
         });
 
-        function getText() {
-                var oppgaveEn = document.getElementById("oppgaveEn").value;
-                var outputParagraph = document.getElementById("svarOppgaveEn");
-                outputParagraph.textContent = oppgaveEn;
-            }
+        function clearTxt(event){
+            let input1 = document.getElementById('oppg1');
+            input1.value = "";
+        }
+        function clearTxt2(event){
+            let input2 = document.getElementById('oppg2');
+            input2.value = "";
+        }
+        function clearTxt3(event){
+            let input3 = document.getElementById('oppg3');
+            input3.value = "";
+        }
+
 
     </script>
 
