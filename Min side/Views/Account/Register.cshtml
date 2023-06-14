@@ -1,0 +1,264 @@
+﻿@model RegistrationApp.Models.RegisterViewModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<style>
+
+     body {
+  margin: 0;
+  font-family: "Jost", sans-serif;
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f3f1;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #aaa;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #335ddc;
+  border-radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+.form-container {
+  max-width: 500px;
+  width: 100%;
+  padding: 0.5rem 4rem;
+  height: 670px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  margin: 2rem auto;
+  border-radius: 15px;
+  border: 1px solid #c3c2c2;
+}
+.form-container .logo {
+  padding: 4rem 0;
+}
+.form-container .logo img {
+  width: 15rem;
+  height: 3rem;
+}
+
+.form-container p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.form-container form {
+  transition: transform 0.6s ease-in-out;
+}
+
+.form-container.register-form {
+  transform: translateX(400px);
+}
+
+.form-container.login-form {
+  transform: translateX(0);
+}
+
+.form-container.register-form .login-form {
+  transform: translateX(-400px);
+}
+
+.form-container.register-form h2 {
+  margin-bottom: 30px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"],
+.form-container input[type="email"] {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 15px;
+  border: 1px solid #c3c2c2;
+  border-radius: 10px;
+  outline: none;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #c7b9a5;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #c7b9a5dc;
+}
+
+.form-container .toggle-form {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 12px;
+  text-decoration: underline;
+  color: #666;
+  cursor: pointer;
+}
+
+.formslinks {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.loginformlink {
+  color: #c7b9a5;
+  padding: 0.2rem 0;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  font-family: "Jost", sans-serif;
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f3f1;
+  margin: 0;
+  padding: 0;
+}
+
+.minside-container {
+  max-width: 500px;
+  width: 100%;
+  padding: 0 4rem;
+  height: 560px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  margin: 2rem auto;
+  border-radius: 15px;
+  border: 1px solid #c3c2c2;
+}
+
+.minside-container .minsidep {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.minside-container form {
+  transition: transform 0.6s ease-in-out;
+}
+
+.minside-container.register-form {
+  transform: translateX(400px);
+}
+
+.minside-container.minsidebox {
+  transform: translateX(0);
+}
+
+.minside-container.register-form .minsidebox {
+  transform: translateX(-400px);
+}
+
+.boxcontainer .box {
+  display: flex;
+  width: 380px;
+  height: 150px;
+  background-color: #c7b9a5;
+}
+.boxcontainer .box .grpahimg {
+  width: 50%;
+  padding: 1rem;
+  height: 100%;
+  background-color: #c7b9a5;
+}
+
+.minsidetop {
+  padding: 0rem 0;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 1rem;
+}
+ul li {
+  padding: 0.3rem 0;
+}
+
+ul li::before {
+  content: "\2022";
+  color: red;
+  font-weight: 900;
+  display: inline-block;
+  width: 0.5em;
+  margin-left: -1em;
+}
+.progress {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.progress img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.3rem 0;
+  width: 13px !important;
+  height: 13px !important;
+}
+
+.progress span {
+  font-size: 0.7rem;
+}
+</style>
+<div class="row">
+    <div class="col-md-12 form-container">
+        <div class="logo">
+        <img
+          src="https://scontent.fisb17-1.fna.fbcdn.net/v/t39.30808-6/351341555_204814675796403_7340332154586199877_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeHIJuK5PKG5wXUA1HjOdkt5F3w-6m9_nMwXfD7qb3-czKBc-OPhLx7MIK29Nw-oQ3uk0_qHdjFCzP-ivCIeWlOi&_nc_ohc=-Vy9CQXuXlwAX8YxRcy&_nc_ht=scontent.fisb17-1.fna&oh=00_AfBUZ2S-1wPBwF6-xEyCRYFd7Fl2aPIXKrmxXGvqnX67FQ&oe=648561CF"
+          alt=""
+        />
+      </div>
+        <h3>Opprett ny bruker</h3>
+        <p>Fyll ut feltene under for å opprette en bruker</p>
+        <form method="post">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                @*<label asp-for="UserName"></label>*@
+                <input asp-for="UserName" class="form-control" placeholder="Brukernavn" />
+                <span asp-validation-for="UserName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                @*<label asp-for="Password"></label>*@
+                <input asp-for="Password" class="form-control" placeholder="E-post adresse" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                @*<label asp-for="ConfirmPassword"></label>*@
+                <input asp-for="ConfirmPassword" class="form-control" placeholder="passord" />
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn-primary">Opprett bruker</button>
+        </form>
+
+    </div>
+</div>
