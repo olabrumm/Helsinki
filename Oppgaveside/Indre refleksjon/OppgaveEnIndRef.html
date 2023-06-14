@@ -68,7 +68,9 @@
     </div>
 
     <div class="bottomBar">
-        <div class="nextPage"><a href="../../Resultat/Indre Refleksjon/Indrerefen_resultat.html" class="link">Hva har du lært?</a></div>
+        <div class="nextPage" id="nextPageId">
+            <a href="../../Resultat/Indre Refleksjon/Indrerefen_resultat.html" class="link">Hva har du lært?</a>
+        </div>
         <div class="navigation">
             <a href="OppgaveToIndRef.html" class="nextAssignment">&#8250;</a>
         </div>
@@ -101,10 +103,12 @@
 
         var secondCheckBox = document.getElementById("secondCheckBox");
         var questionThree = document.getElementById("questionThree");
+        var nextPageId = document.getElementById("nextPageId");
 
         secondCheckBox.addEventListener('change', function() {
             if (this.checked) {
                 questionThree.classList.add("show");
+                nextPageId.classList.add("show");
                 questionTwo.classList.remove("show");
             } else {
                 questionThree.classList.remove("show");

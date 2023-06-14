@@ -150,6 +150,11 @@ a:hover {
 }
 
 .nextPage {
+  display: none;
+}
+
+.nextPage.show {
+  display: grid;
   grid-row: 1 / 1;
   grid-column: 1 / 1;
   text-align: center;

@@ -60,7 +60,7 @@
     </div>
 
     <div class="bottomBar">
-        <div class="nextPage">
+        <div class="nextPage" id="nextPageId">
             <a href="../../Resultat/Dyp Økologi/dypøkoto_resultat.html" class="link">Hva har du lært?</a>
         </div>
         <div class="navigation">
@@ -99,10 +99,12 @@
 
         var secondCheckBox = document.getElementById("secondCheckBox");
         var questionThree = document.getElementById("questionThree");
+        var nextPageId = document.getElementById("nextPageId");
 
         secondCheckBox.addEventListener('change', function() {
             if (this.checked) {
                 questionThree.classList.add("show");
+                nextPageId.classList.add("show");
                 questionTwo.classList.remove("show");
             } else {
                 questionThree.classList.remove("show");

@@ -52,17 +52,12 @@
             <p>Å starte dagen med å re senga er noe av det viktigste du gjør. <br>
             Da har du startet en prosess som blir med deg gjennom dagen. <br>
             Og hvis du har hatt en dårlig dag, kommer du hvertfall hjem til en redd seng.</p>
-            <div id="userInput">
-                <input type="text" id="oppgaveEn">
-                <button onclick="getText()">Avgi ditt svar</button>
-                <p id="svarOppgaveEn"></p>
-            </div>
         </div>
 
     </div>
 
     <div class="bottomBar">
-        <div class="nextPage">
+        <div class="nextPage" id="nextPageId">
             <a href="../../Resultat/Livskvalitet/Livkvalto_resultat.html" class="link">Hva har du lært?</a>
         </div>
         <div class="navigation">
@@ -98,22 +93,17 @@
 
         var secondCheckBox = document.getElementById("secondCheckBox");
         var questionThree = document.getElementById("questionThree");
+        var nextPageId = document.getElementById("nextPageId");
 
         secondCheckBox.addEventListener('change', function() {
             if (this.checked) {
                 questionThree.classList.add("show");
+                nextPageId.classList.add("show");
                 questionTwo.classList.remove("show");
             } else {
                 questionThree.classList.remove("show");
             }
         });
-
-        function getText() {
-                var oppgaveEn = document.getElementById("oppgaveEn").value;
-                var outputParagraph = document.getElementById("svarOppgaveEn");
-                outputParagraph.textContent = oppgaveEn;
-            }
-
     </script>
 
 </body>
