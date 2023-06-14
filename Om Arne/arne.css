@@ -52,6 +52,21 @@ body::before {
     font-family: sans-serif;
     }
 
+ #morearne{
+    position: absolute;
+    bottom: -80%;
+    left: 1%;
+    display: inline-block;
+    padding: 0.5% 1%;
+    background-color: #96608E;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    font-size: 17px;
+    font-family: sans-serif;
+ }   
+
 .button:hover {
     background-color: #333;
     color: #fff;
@@ -61,6 +76,7 @@ body::before {
     position: absolute;
     height: 8%;
     width: 15%;
+    border-radius: 10px;
     left: 5%;
     top: 2%; 
     }
@@ -75,5 +91,67 @@ body::before {
     font-family: sans-serif;
     }
 
-   
+    #undertitel{
+        position: absolute;
+        top: 20%;
+        display: inline-block;
+        color:#4A4B4F;
+        padding: 1vw;
+        font-size: 23px; 
+        font-family: sans-serif;
+    }
+
+    img{
     
+        border-radius: 30%;
+        border-color: #81A979;
+        width:350px;
+        height:450px;
+        
+    }
+    
+    #arne{
+        border-radius: 30%;
+        position: static;
+        bottom: -80%;
+        width:250px;
+        height:300px;
+        float: right;
+        margin-left: 15px;
+        
+        
+        border-color: #81A979;
+    }
+    #info{
+        font-size: 25px;
+        font-family: sans-serif;
+        position: relative;
+        bottom: -90%;
+        left: 2%;
+        line-height: 1.9;
+        text-align: left;
+        padding-left: 10px;
+      
+        color: #C7B9A5;
+        
+     
+    }
+    #imagenaess{
+        border-radius: 30%;
+        border-color: #81A979;
+        position: absolute;
+        left: 10px;
+        bottom: -5%;
+        width:350px;
+        height:450px;
+    }
+    
+    .sitater{
+        position: absolute;
+        color: #6D6E71;
+        top: 30%;
+        left: 35%;
+        font-size: 50px;
+        line-height: 2.2;
+        font-family: sans-serif;
+    }

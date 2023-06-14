@@ -4,7 +4,16 @@ body {
   font-family: sans-serif;
   color: #505054;
 }
-
+body::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  height: 4%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}
 a {
   text-decoration: none;
   display: inline-block;
@@ -114,8 +123,8 @@ a:hover {
   overflow: hidden;
 }
 
-#imageOne {
-  background-image: url(relax.jpg);
+#imageOneTaskOne {
+  background-image: url(Messy.jpg);
   background-size: contain;
   background-position: center;
   align-items: center;
@@ -124,8 +133,78 @@ a:hover {
   border: 0px;
 }
 
-#imageTwo {
-  background-image: url(listening.jpeg);
+#imageTwoTaskOne {
+  background-image: url(messybed.jpg);
+  background-size: contain;
+  background-position: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  border: 0px;
+}
+
+#imageThreeTaskOne {
+  background-image: url(reddseng.jpg);
+  background-size: contain;
+  background-position: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  border: 0px;
+}
+
+#imageOneTaskTwo {
+  background-image: url(messybed.jpg);
+  background-size: contain;
+  background-position: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  border: 0px;
+}
+
+#imageTwoTaskTwo {
+  background-image: url(reddseng.jpg);
+  background-size: contain;
+  background-position: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  border: 0px;
+}
+
+#imageThreeTaskTwo {
+  background-image: url(reddseng.jpg);
+  background-size: contain;
+  background-position: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  border: 0px;
+}
+
+#imageOneTaskThree {
+  background-image: url(familiehjelp.jpg);
+  background-size: contain;
+  background-position: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  border: 0px;
+}
+
+#imageTwoTaskThree {
+  background-image: url(familiehjelp2.jpg);
+  background-size: contain;
+  background-position: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  border: 0px;
+}
+
+#imageThreeTaskThree {
+  background-image: url(reddseng.jpg);
   background-size: contain;
   background-position: center;
   align-items: center;
