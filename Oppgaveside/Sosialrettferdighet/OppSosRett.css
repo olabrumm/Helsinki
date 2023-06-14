@@ -167,44 +167,17 @@ a:hover {
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 
-#assiImages {
+#assiGrid {
   display: grid;
-  grid-row: 1 / 4;
-  grid-column: 1 / 1;
+  grid-template-columns: repeat(3, 5fr);
+  grid-template-rows: repeat(auto-fit, 100px 1fr);
+  text-align: center;
+}
+
+.assiImages {
+  width: 100%;
   height: 100%;
-  text-align: center;
-}
-
-#assiImageOne {
-  background-image: url(../../Resultat/badges/Badges/Dypokologi1.png);
-  background-size: contain;
-  background-position: left;
-  align-items: center;
-  background-repeat: no-repeat;
-  text-align: left;
-  border: 0px;
-  padding: 0%;
-}
-
-#assiImageTwo {
-  background-image: url(../../Resultat/badges/Badges/Dypokologi1.png);
-  background-size: contain;
-  background-position: center;
-  align-items: center;
-  background-repeat: no-repeat;
-  text-align: center;
-  padding: 0%;
-  border: 0px;
-}
-
-#assiImageThree {
-  background-image: url(../../Resultat/badges/Badges/Dypokologi1.png);
-  background-size: contain;
-  background-position: center;
-  align-items: center;
-  background-repeat: no-repeat;
-  text-align: center;
-  border: 0px;
+  object-fit: cover;
 }
 
 #userInputTwo {
@@ -221,6 +194,11 @@ a:hover {
 }
 
 .nextPage {
+  display: none;
+}
+
+.nextPage.show {
+  display: grid;
   grid-row: 1 / 1;
   grid-column: 1 / 1;
   text-align: center;

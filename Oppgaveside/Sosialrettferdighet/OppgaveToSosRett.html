@@ -48,21 +48,25 @@
     
         <div class="question" id="questionThree">
             <div class="assiBox">
-                <div id="assiImages">
-                    <img height="200px" width="100px" src="../../Resultat/badges/Badges/Dypokologi1.png" alt="bildeEn">
-                    <img height="200px" width="100px" src="../../Resultat/badges/Badges/Dypokologi1.png" alt="bildeEn">
-                    <img height="200px" width="100px"src="../../Resultat/badges/Badges/Dypokologi1.png" alt="bildeEn">
+                <div id="assiGrid">
+                    <img class="assiImages" src="1.jpeg" alt="bildeEn">
+                    <img class="assiImages" src="2.jpg" alt="bildeEn">
+                    <img class="assiImages" src="3.jpg" alt="bildeEn">
                 </div>
                 <div id="userInputTwo">
-                    <p>Ut i fra problemstillingen over, hvordan ville du løst dette?</p>
+                    <p>
+                        På venstre side ser du tre bilder. Hva er den første tanken eller ordet du kommer på når du ser hvert bilde? 
+                        <br>
+                        Skriv svarene i teksboksene under.
+                    </p>
                     <input type="text" id="assiOne" placeholder="Svar...">
-                    <button onclick="getText()">Avgi ditt svar</button>
+                    <button onclick="getText()">Ferdig!</button>
                     <p id="answAssiOne"></p>
                     <input type="text" id="assiTwo" placeholder="Svar...">
-                    <button onclick="getText()">Avgi ditt svar</button>
+                    <button onclick="getText()">Ferdig!</button>
                     <p id="answAssiTwo"></p>
                     <input type="text" id="assiThree" placeholder="Svar...">
-                    <button onclick="getText()">Avgi ditt svar</button>
+                    <button onclick="getText()">Ferdig!</button>
                     <p id="answAssiThree"></p>
                 </div>
             </div>
@@ -71,7 +75,7 @@
     </div>
 
     <div class="bottomBar">
-        <div class="nextPage">
+        <div class="nextPage" id="nextPageId">
             <a href="../../Resultat/Sosialrettferdighet/Sosretto_resultat.html" class="link">Hva har du lært?</a>
         </div>
         <div class="navigation">
@@ -107,10 +111,12 @@
 
         var secondCheckBox = document.getElementById("secondCheckBox");
         var questionThree = document.getElementById("questionThree");
+        var nextPageId = document.getElementById("nextPageId");
 
         secondCheckBox.addEventListener('change', function() {
             if (this.checked) {
                 questionThree.classList.add("show");
+                nextPageId.classList.add("show");
                 questionTwo.classList.remove("show");
             } else {
                 questionThree.classList.remove("show");
