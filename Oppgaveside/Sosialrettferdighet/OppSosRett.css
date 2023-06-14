@@ -150,6 +150,58 @@ a:hover {
   word-break: break-all;
 }
 
+.assiBox {
+  display: grid;
+  padding: 0%;
+  grid-template-rows: repeat(2, 134px);
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+#assiImages {
+  display: grid;
+  grid-row: 1 / 4;
+  grid-column: 1 / 1;
+  height: 100%;
+  text-align: center;
+}
+
+#assiImageOne {
+  background-image: url(../../Resultat/badges/Badges/Dypokologi1.png);
+  background-size: contain;
+  background-position: left;
+  align-items: center;
+  background-repeat: no-repeat;
+  text-align: left;
+  border: 0px;
+  padding: 0%;
+}
+
+#assiImageTwo {
+  background-image: url(../../Resultat/badges/Badges/Dypokologi1.png);
+  background-size: contain;
+  background-position: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 0%;
+  border: 0px;
+}
+
+#assiImageThree {
+  background-image: url(../../Resultat/badges/Badges/Dypokologi1.png);
+  background-size: contain;
+  background-position: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  border: 0px;
+}
+
+#userInputTwo {
+  display: grid;
+}
+
+
 .bottomBar {
   display: grid; 
   grid-template-rows: repeat(2, 119px);

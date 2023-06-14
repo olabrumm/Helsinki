@@ -47,13 +47,24 @@
         </div>
     
         <div class="question" id="questionThree">
-            <iframe id="video" type="text/html" title="arnerop" src="https://www.youtube.com/embed/kK1tzfoRmUk"> 
-            </iframe>
-            <p>Ut i fra problemstillingen over, hvordan ville du løst dette?</p>
-            <div id="userInput">
-                <input type="text" id="oppgaveEn">
-                <button onclick="getText()">Avgi ditt svar</button>
-                <p id="svarOppgaveEn"></p>
+            <div class="assiBox">
+                <div id="assiImages">
+                    <img height="200px" width="100px" src="../../Resultat/badges/Badges/Dypokologi1.png" alt="bildeEn">
+                    <img height="200px" width="100px" src="../../Resultat/badges/Badges/Dypokologi1.png" alt="bildeEn">
+                    <img height="200px" width="100px"src="../../Resultat/badges/Badges/Dypokologi1.png" alt="bildeEn">
+                </div>
+                <div id="userInputTwo">
+                    <p>Ut i fra problemstillingen over, hvordan ville du løst dette?</p>
+                    <input type="text" id="assiOne" placeholder="Svar...">
+                    <button onclick="getText()">Avgi ditt svar</button>
+                    <p id="answAssiOne"></p>
+                    <input type="text" id="assiTwo" placeholder="Svar...">
+                    <button onclick="getText()">Avgi ditt svar</button>
+                    <p id="answAssiTwo"></p>
+                    <input type="text" id="assiThree" placeholder="Svar...">
+                    <button onclick="getText()">Avgi ditt svar</button>
+                    <p id="answAssiThree"></p>
+                </div>
             </div>
         </div>
 
@@ -107,9 +118,17 @@
         });
 
         function getText() {
-                var oppgaveEn = document.getElementById("oppgaveEn").value;
-                var outputParagraph = document.getElementById("svarOppgaveEn");
-                outputParagraph.textContent = oppgaveEn;
+                var assiOne = document.getElementById("assiOne").value;
+                var outputOneParagraph = document.getElementById("answAssiOne");
+                outputOneParagraph.textContent = assiOne;
+
+                var assiTwo = document.getElementById("assiTwo").value;
+                var outputTwoParagraph = document.getElementById("answAssiTwo");
+                outputTwoParagraph.textContent = assiTwo;
+
+                var assiThree = document.getElementById("assiThree").value;
+                var outputThreeParagraph = document.getElementById("answAssiThree");
+                outputThreeParagraph.textContent = assiThree;
             }
 
     </script>
