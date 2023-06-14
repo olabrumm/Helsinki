@@ -26,7 +26,34 @@ fetch('https://localhost:7147/api/Users')
         })
     })
 
+    const url = 'https://localhost:7147/api/Users'; // Replace with your API endpoint URL
 
-    </script>
+const data = {
+  username: 'Anders Persson',
+  email: 'johndoe@example.com',
+  password: 'hogeyboogey'
+  
+};
+
+const requestOptions = {
+  method: 'POST', // HTTP method (e.g., POST, PUT, PATCH)
+  headers: {
+    'Content-Type': 'application/json' // Set the content type to JSON
+  },
+  body: JSON.stringify(data) // Convert the data to JSON string
+};
+
+fetch(url, requestOptions)
+  .then(response => response.json())
+  .then(result => {
+    console.log('Data successfully written:', result);
+    // Perform any further actions after successful write
+  })
+  .catch(error => {
+    console.error('Error writing data:', error);
+    // Handle any errors that occurred during write
+  });
+
+</script>
 </body>
 </html>
